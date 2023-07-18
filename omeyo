@@ -1,0 +1,79 @@
+package omayoproject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class omayo {
+
+	public static void main(String[] args) throws InterruptedException {
+	System.setProperty("driver.chrome.driver"," C:\\Users\\pawan kalyan\\OneDrive\\Documents\\Automation testing\\Browser extension");
+     
+	
+	  WebDriver driver=new ChromeDriver();
+	  
+	  
+	  driver.get("https://omayo.blogspot.com/");
+	  
+	  driver.manage().window().maximize();
+	  
+	  driver.findElement(By.id("drop1")).click();
+	  
+	  Thread.sleep(2000);
+	  
+	  driver.findElement(By.xpath("//*[@id=\"ta1\"]")).sendKeys("pawan page one");
+	  
+	 // Thread.sleep(2000);
+	  // driver.findElement(By.xpath("//*[@id=\"link1\"]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"textbox1\"]")).sendKeys("seleniumdriver");
+	   Thread.sleep(2000);
+	   
+	   driver.findElement(By.xpath("//*[@id=\"but2\"]")).click();
+	   Thread.sleep(2000);
+	   
+	   driver.findElement(By.cssSelector("input[type='text']")).sendKeys("pawankalyan");
+	   Thread.sleep(2000);
+	   driver.findElement(By.cssSelector("input[type='password']")).sendKeys("07036800755");
+	   Thread.sleep(2000);
+	   driver.findElement(By.cssSelector("input[ type='button']")).click();
+	   Thread.sleep(3000);
+	   driver.findElement(By.xpath("//*[@id=\"BlogSearch1_form\"]/form/table/tbody/tr/td[1]/input")).sendKeys("omayo blog");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"BlogSearch1_form\"]/form/table/tbody/tr/td[2]/input")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"HTML15\"]/div[1]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"alert1\"]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"checkbox2\"]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"prompt\"]")).click();
+	   Thread.sleep(5000);
+	   driver.findElement(By.xpath(" //*[@id=\"HTML22\"]/div[1]/input")).sendKeys("css selector");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"HTML24\"]/div[1]/input")).sendKeys("classone");
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"HTML32\"]/div[1]/input[1]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"HTML33\"]/div[1]/input[1]")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"HTML34\"]/div[1]/div/button")).click();
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//*[@id=\"myDropdown\"]/a[1]")).click();
+	   Thread.sleep(2000);
+	   driver.close();
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	}
+
+}
